@@ -16,5 +16,8 @@
   "private": true,
   "author": "",
   "license": "BSD",
-  "gitHead": "5b860f2802217712452d0570956ba51312c0e9b0"
+  "gitHead": "5b860f2802217712452d0570956ba51312c0e9b0",
+  "devDependencies": {
+    "less": "~1.3.3"
+  }
 }
