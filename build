@@ -1,0 +1,3 @@
+#!/bin/sh
+
+lessc src/style.less > css/style.css

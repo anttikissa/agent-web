@@ -1,0 +1,20 @@
+{
+  "name": "agent-web",
+  "version": "0.0.0",
+  "description": "agent-web",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anttisykari/agent-web.git"
+  },
+  "private": true,
+  "author": "",
+  "license": "BSD",
+  "gitHead": "5b860f2802217712452d0570956ba51312c0e9b0"
+}
