@@ -94,8 +94,18 @@ body {
 header {
   background: url(../img/banneri.jpg);
 }
+#main {
+  background: url(../img/main_bg.png);
+}
+nav ul a:hover {
+  color: red;
+}
+nav ul .current > a {
+  color: red;
+}
 nav ul ul {
-  color: #888;
+  color: black;
+  background: white;
   text-transform: lowercase;
 }
 article {

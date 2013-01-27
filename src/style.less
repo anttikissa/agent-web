@@ -7,10 +7,8 @@
 
 // Layout
 
-//@nav-width: 200px;
-//@content-width: 420px;
-
-// | nav  |      | text |
+// | #000 | #fff | #fff |
+// | nav1 | nav2 | text |
 // |  w1  |  w2  |  w3  | 
 
 @w1: 140px;
@@ -135,12 +133,26 @@ header {
 	background: url(../img/banneri.jpg);
 }
 
+#main {
+	background: url(../img/main_bg.png);
+}
+
 nav ul {
+	a:hover {
+		color: red;
+	}
+
+	.current > a {
+		color: red;
+	}
+
 	ul {
-		color: #888;
+		color: black;
+		background: white;
 		text-transform: lowercase;
 	}
 }
+
 article {
 	background: white;
 	color: black;

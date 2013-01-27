@@ -8,40 +8,39 @@
 </header>
 
 <div id='main'>
-
 	<nav>
 		<ul>
-			<li>Etusivu
+			<li><a>Etusivu</a>
 				<ul>
 					<li> Menu
 					<li> Toinen
 				</ul>
-			<li class='current'>Agent
+			<li class='current'><a>Agent</a>
 				<ul>
-					<li> Tarina
-					<li> Hahmot
+					<li class='current'><a>Tarina</a>
+					<li><a>Hahmot</a>
 				</ul>
 			</li>
-			<li>Liput
+			<li><a>Liput</a>
 				<ul>
 					<li> Menu
 					<li> Toinen
 				</ul>
-			<li>Tekijät
+			<li><a>Tekijät</a>
 				<ul>
 					<li> Osa-alue
 					<li> Toinen
 					<li> Toinen
 					<li> Toinen
 				</ul>
-			<li>Sponsorit
+			<li><a>Sponsorit</a>
 				<ul>
 					<li> Osa-alue
 					<li> Toinen
 					<li> Toinen
 					<li> Toinen
 				</ul>
-			<li>Mikä speksi?
+			<li><a>Mikä speksi?</a>
 				<ul>
 					<li> Osa-alue
 					<li> Toinen
