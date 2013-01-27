@@ -21,9 +21,11 @@ header {
 }
 
 #main {
-	border: 1px solid red;
 	width: @total-width;
 	margin: -40px auto 0px auto;
+
+	position: relative;
+	left: -0.5 * @w1;
 }
 
 nav {
@@ -73,9 +75,12 @@ article {
 }
 
 footer {
-	width: @total-width;
+	width: @total-width - @w1;
+	padding-left: @w1;
 
 	margin: 0 auto 40px auto;
+
+	text-align: center;
 }
 
 // Typography
