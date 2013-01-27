@@ -17,7 +17,7 @@ nav {
   padding-top: 20px;
 }
 nav ul {
-  width: 140px;
+  width: 149px;
   text-align: right;
   list-style-type: none;
 }
@@ -35,7 +35,11 @@ nav ul ul {
   margin-left: -140px;
   text-align: left;
   position: relative;
-  left: 160px;
+  left: 132px;
+}
+nav ul ul li {
+  padding-left: 18px;
+  padding-right: 9px;
 }
 article {
   float: right;
@@ -105,14 +109,25 @@ header {
 }
 nav ul a:hover {
   color: red;
+  cursor: pointer;
 }
-nav ul .current > a {
-  color: red;
+nav ul .current {
+  background-image: url(../img/diamond_base.png);
+  background-size: 18px 36px;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
 }
 nav ul ul {
   color: black;
-  background: white;
   text-transform: lowercase;
+}
+nav ul ul .current {
+  background-image: url(../img/diamond.png);
+  background-size: 18px 18px;
+  background-position: 0 0;
+}
+nav ul ul .current a {
+  color: red;
 }
 article {
   background: white;
