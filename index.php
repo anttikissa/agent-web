@@ -6,7 +6,7 @@
 <title>Agent</title>
 
 <body>
-	<div id='content'>
+	<div id='main'>
 		<nav>
 			<ul>
 				<li><a>Etusivu</a>
