@@ -1,5 +1,15 @@
 #!/bin/sh
 
+cd $(dirname $0)
+
 export PATH=$PATH:./node_modules/.bin
 
+function ts() {
+	date -u '+%Y-%m-%d %T.%3N'
+}
+
+echo `ts` Building.
+
 lessc src/style.less > css/style.css
+
+echo `ts` Build finished.
