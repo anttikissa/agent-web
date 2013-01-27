@@ -6,6 +6,7 @@ $ ->
 		$(primaries).each (idx, it) =>
 			if it == this
 				$(this).addClass 'current'
+				$(this).find('li').removeClass 'current'
 				$(this).find('li:first').addClass 'current'
 			else
 				$(it).removeClass 'current'

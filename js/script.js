@@ -10,6 +10,7 @@
       return $(primaries).each(function(idx, it) {
         if (it === _this) {
           $(_this).addClass('current');
+          $(_this).find('li').removeClass('current');
           return $(_this).find('li:first').addClass('current');
         } else {
           return $(it).removeClass('current');
