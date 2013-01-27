@@ -3,7 +3,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
 	font-weight: normal;
 }
 
@@ -24,7 +23,7 @@ header {
 nav {
 	float: left;
 	width: @nav-width;
-	border: 1px solid red;
+//	border: 1px solid red;
 	margin-left: -@nav-width - 20px;
 	text-align: right;
 	margin-right: 20px;
@@ -38,6 +37,7 @@ nav {
 article {
 	width: @content-width;
 	padding-top: 20px;
+	padding-bottom: 20px;
 
 	p {
 		margin-left: 20px;
@@ -54,6 +54,48 @@ footer {
 	margin: 0 auto 40px auto;
 }
 
+// Typography
+
+.font-trebuchet {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.font-gill-sans {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+article {
+	.font-trebuchet;
+	font-size: 11px;
+	line-height: 13px;
+
+	h2 {
+		.font-gill-sans;
+		font-size: 18px;
+		line-height: 13px;
+		@lowmargin: 3px;
+		margin: (13px - @lowmargin) 20px @lowmargin 20px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+nav {
+	.font-gill-sans;
+	font-size: 14px;
+	line-height: 18px;
+
+	text-transform: uppercase;
+	font-variant: small-caps;
+}
+
+footer {
+	.font-gill-sans;
+	font-size: 16px;
+	line-height: 18px;
+}
+
 // Colors & decoration
 
 body {
@@ -68,8 +110,12 @@ header {
 article {
 	background: white;
 	color: black;
+	a {
+		color: red;
+	}
 }
 
 footer a {
 	color: red;
 }
+
