@@ -11,5 +11,6 @@ function ts() {
 echo `ts` Building.
 
 lessc src/style.less > css/style.css
+coffee -c -o js/ src/script.coffee 
 
 echo `ts` Build finished.

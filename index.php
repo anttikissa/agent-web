@@ -2,6 +2,7 @@
 <!doctype html>
 <meta charset='utf-8'>
 <link rel='stylesheet' href='css/style.css'>
+
 <title>Agent</title>
 
 <header>
@@ -89,4 +90,6 @@
 	<a>teekkarispeksi.fi</a>
 </footer>
 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<script src='js/script.js'></script>
 
