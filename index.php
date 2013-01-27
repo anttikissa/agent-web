@@ -11,12 +11,41 @@
 
 	<nav>
 		<ul>
-			<li>Etusivu</li>
-			<li>Agent</li>
-			<li>Liput</li>
-			<li>Tekijät</li>
-			<li>Sponsorit</li>
-			<li>Mikä speksi?</li>
+			<li>Etusivu
+				<ul>
+					<li> Menu
+					<li> Toinen
+				</ul>
+			<li class='current'>Agent
+				<ul>
+					<li> Tarina
+					<li> Hahmot
+				</ul>
+			</li>
+			<li>Liput
+				<ul>
+					<li> Menu
+					<li> Toinen
+				</ul>
+			<li>Tekijät
+				<ul>
+					<li> Osa-alue
+					<li> Toinen
+					<li> Toinen
+					<li> Toinen
+				</ul>
+			<li>Sponsorit
+				<ul>
+					<li> Osa-alue
+					<li> Toinen
+					<li> Toinen
+					<li> Toinen
+				</ul>
+			<li>Mikä speksi?
+				<ul>
+					<li> Osa-alue
+					<li> Toinen
+				</ul>
 		</ul>
 	</nav>
 
@@ -54,6 +83,7 @@
 
 	</article>
 
+	<div style='clear: both'></div>
 </div>
 
 <footer>

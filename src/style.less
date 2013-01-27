@@ -3,41 +3,67 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-weight: normal;
 }
 
 // Layout
 
-@nav-width: 200px;
-@content-width: 420px;
+//@nav-width: 200px;
+//@content-width: 420px;
+
+// | nav  |      | text |
+// |  w1  |  w2  |  w3  | 
+
+@w1: 140px;
+@w2: 130px;
+@w3: 290px;
+@total-width: @w1 + @w2 + @w3;
 
 header {
 	height: 200px;
 }
 
 #main {
-	width: @nav-width + @content-width;
+	border: 1px solid red;
+	width: @total-width;
 	margin: -40px auto 0px auto;
 }
 
 nav {
 	float: left;
-	width: @nav-width;
-//	border: 1px solid red;
-	margin-left: -@nav-width - 20px;
-	text-align: right;
-	margin-right: 20px;
+
+	width: @w1 + @w2;
 
 	padding-top: 20px;
 	ul {
+		li {
+			padding-right: 20px;
+		}
+		width: @w1;
+		text-align: right;
 		list-style-type: none;
+
+		li.current ul {
+			display: block;
+		}
+		ul {
+			padding-right: 0;
+			display: none;
+			width: @w2;
+			float: right;
+			margin-left: -@w1;
+			text-align: left;
+			position: relative;
+			left: @w2 + 20px + 10px;
+		}
 	}
 }
 
 article {
-	width: @content-width;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	float: right;
+
+	background: blue;
+	width: @w3;
+	padding: 20px 0;
 
 	p {
 		margin-left: 20px;
@@ -49,7 +75,7 @@ article {
 }
 
 footer {
-	width: @content-width;
+	width: @total-width;
 
 	margin: 0 auto 40px auto;
 }
@@ -73,6 +99,7 @@ article {
 		.font-gill-sans;
 		font-size: 18px;
 		line-height: 13px;
+		font-weight: normal;
 		@lowmargin: 3px;
 		margin: (13px - @lowmargin) 20px @lowmargin 20px;
 		&:first-child {
@@ -83,11 +110,12 @@ article {
 
 nav {
 	.font-gill-sans;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
 
 	text-transform: uppercase;
-	font-variant: small-caps;
 }
 
 footer {
@@ -107,6 +135,12 @@ header {
 	background: url(../img/banneri.jpg);
 }
 
+nav ul {
+	ul {
+		color: #888;
+		text-transform: lowercase;
+	}
+}
 article {
 	background: white;
 	color: black;
