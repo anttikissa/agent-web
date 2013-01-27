@@ -5,11 +5,7 @@
 
 <title>Agent</title>
 
-<header>
-</header>
-
-<div id='main'>
-
+<body>
 	<div id='content'>
 		<nav>
 			<ul>
@@ -89,8 +85,7 @@
 	<footer>
 		<a>teekkarispeksi.fi</a>
 	</footer>
-</div>
-
+</body>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
 <script src='js/script.js'></script>

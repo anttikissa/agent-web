@@ -16,13 +16,13 @@
 @w3: 290px;
 @total-width: @w1 + @w2 + @w3;
 
-header {
-	height: 200px;
+body {
+	padding: 160px 0;
 }
 
-#main {
+#content {
 	width: @total-width;
-	margin: -40px auto 0px auto;
+	margin: 0 auto;
 
 	position: relative;
 	left: -0.5 * @w1;
@@ -30,7 +30,6 @@ header {
 
 nav {
 	float: left;
-
 	width: @w1 + @w2;
 
 	padding-top: 20px;
@@ -74,11 +73,7 @@ article {
 }
 
 footer {
-	width: @total-width - @w1;
-	padding-left: @w1;
-
 	margin: 0 auto 40px auto;
-
 	text-align: center;
 }
 
@@ -128,9 +123,15 @@ footer {
 
 // Colors & decoration
 
-body {
+html {
 	background: black;
 	color: white;
+}
+
+body {
+	background: url(../img/banneri.png);
+	background-position: center top;
+	background-repeat: no-repeat;
 }
 
 header {
