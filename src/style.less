@@ -9,8 +9,49 @@
 
 // Layout
 
+@nav-width: 200px;
+@content-width: 420px;
+
 header {
 	height: 200px;
+}
+
+#main {
+	width: @nav-width + @content-width;
+	margin: -40px auto 0px auto;
+}
+
+nav {
+	float: left;
+	width: @nav-width;
+	border: 1px solid red;
+	margin-left: -@nav-width - 20px;
+	text-align: right;
+	margin-right: 20px;
+
+	padding-top: 20px;
+	ul {
+		list-style-type: none;
+	}
+}
+
+article {
+	width: @content-width;
+	padding-top: 20px;
+
+	p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	p + p {
+		margin-top: 20px;
+	}
+}
+
+footer {
+	width: @content-width;
+
+	margin: 0 auto 40px auto;
 }
 
 // Colors & decoration
@@ -24,3 +65,11 @@ header {
 	background: url(../img/banneri.jpg);
 }
 
+article {
+	background: white;
+	color: black;
+}
+
+footer a {
+	color: red;
+}

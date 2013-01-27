@@ -7,10 +7,48 @@
 header {
   height: 200px;
 }
+#main {
+  width: 620px;
+  margin: -40px auto 0px auto;
+}
+nav {
+  float: left;
+  width: 200px;
+  border: 1px solid red;
+  margin-left: -220px;
+  text-align: right;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+nav ul {
+  list-style-type: none;
+}
+article {
+  width: 420px;
+  padding-top: 20px;
+}
+article p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+article p + p {
+  margin-top: 20px;
+}
+footer {
+  width: 420px;
+  margin: 0 auto 40px auto;
+}
 body {
   background: black;
   color: white;
 }
 header {
   background: url(../img/banneri.jpg);
+}
+article {
+  background: white;
+  color: black;
+}
+footer a {
+  color: red;
 }
