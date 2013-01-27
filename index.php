@@ -13,8 +13,8 @@
 		<ul>
 			<li><a>Etusivu</a>
 				<ul>
-					<li> Menu
-					<li> Toinen
+					<li><a>Menu</a>
+					<li><a>Toinen</a>
 				</ul>
 			<li class='current'><a>Agent</a>
 				<ul>
@@ -24,27 +24,26 @@
 			</li>
 			<li><a>Liput</a>
 				<ul>
-					<li> Menu
-					<li> Toinen
+					<li><a>Menu</a>
+					<li><a>Toinen</a>
 				</ul>
 			<li><a>Tekijät</a>
 				<ul>
-					<li> Osa-alue
-					<li> Toinen
-					<li> Toinen
-					<li> Toinen
+					<li><a>Osa-alue</a>
+					<li><a>Toinen</a>
+					<li><a>Toinen</a>
+					<li><a>Toinen</a>
 				</ul>
 			<li><a>Sponsorit</a>
 				<ul>
-					<li> Osa-alue
-					<li> Toinen
-					<li> Toinen
-					<li> Toinen
+					<li><a>Sponsori</a>
+					<li><a>kolmas</a>
+					<li><a>kolmas</a>
 				</ul>
 			<li><a>Mikä speksi?</a>
 				<ul>
-					<li> Osa-alue
-					<li> Toinen
+					<li><a>Mikä</a>
+					<li><a>on</a>
 				</ul>
 		</ul>
 	</nav>
