@@ -39,7 +39,6 @@ nav ul ul {
 }
 article {
   float: right;
-  background: blue;
   width: 290px;
   padding: 20px 0;
 }
@@ -95,9 +94,10 @@ body {
   color: white;
 }
 header {
-  background: url(../img/banneri.jpg);
+  background: url(../img/banneri.png);
+  background-position: center 0px;
 }
-#main {
+#content {
   background: url(../img/main_bg.png);
 }
 nav ul a:hover {
