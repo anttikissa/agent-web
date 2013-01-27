@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd $(dirname $0)
+
+./build
+
+while watch-file src/*; do
+	./build
+done
+
