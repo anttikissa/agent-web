@@ -16,6 +16,9 @@
 @w3: 290px;
 @total-width: @w1 + @w2 + @w3;
 
+@menusize: 18px;
+@padding: 20px;
+
 body {
 	padding: 160px 0;
 }
@@ -32,12 +35,12 @@ nav {
 	float: left;
 	width: @w1 + @w2;
 
-	padding-top: 20px;
+	padding-top: @padding;
 	ul {
 		li {
-			padding-right: 20px;
+			padding-right: @padding;
 		}
-		width: @w1;
+		width: @w1 + (@menusize / 2);
 		text-align: right;
 		list-style-type: none;
 
@@ -52,7 +55,11 @@ nav {
 			margin-left: -@w1;
 			text-align: left;
 			position: relative;
-			left: @w2 + 20px + 10px;
+			left: @w2 + @padding - @menusize;
+			li {
+				padding-left: @menusize;
+				padding-right: @menusize / 2;
+			}
 		}
 	}
 }
@@ -61,14 +68,14 @@ article {
 	float: right;
 
 	width: @w3;
-	padding: 20px 0;
+	padding: @padding 0;
 
 	p {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: @padding;
+		margin-right: @padding;
 	}
 	p + p {
-		margin-top: 20px;
+		margin-top: @padding;
 	}
 }
 
@@ -98,7 +105,7 @@ article {
 		line-height: 13px;
 		font-weight: normal;
 		@lowmargin: 3px;
-		margin: (13px - @lowmargin) 20px @lowmargin 20px;
+		margin: (13px - @lowmargin) @padding @lowmargin @padding;
 		&:first-child {
 			margin-top: 0;
 		}
@@ -108,7 +115,7 @@ article {
 nav {
 	.font-gill-sans;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: @menusize;
 	font-weight: bold;
 	letter-spacing: 1px;
 
@@ -146,16 +153,25 @@ header {
 nav ul {
 	a:hover {
 		color: red;
+		cursor: pointer;
 	}
-
-	.current > a {
-		color: red;
+	.current {
+		background-image: url(../img/diamond_base.png);
+		background-size: @menusize @menusize * 2;
+		background-position: 100% 50%;
+		background-repeat: no-repeat;
 	}
-
 	ul {
 		color: black;
-		background: white;
 		text-transform: lowercase;
+		.current {
+		    background-image: url(../img/diamond.png);
+			background-size: @menusize @menusize;
+			background-position: 0 0;
+			a {
+				color: red;
+			}	
+		}
 	}
 }
 
