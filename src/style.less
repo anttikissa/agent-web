@@ -38,7 +38,7 @@ nav {
 	padding-top: @padding;
 	ul {
 		li {
-			padding-right: @padding;
+			padding-right: @padding + @menusize / 2;
 		}
 		width: @w1 + (@menusize / 2);
 		text-align: right;
@@ -55,7 +55,7 @@ nav {
 			margin-left: -@w1;
 			text-align: left;
 			position: relative;
-			left: @w2 + @padding - @menusize;
+			left: @w2 + @padding - @menusize / 2;
 			li {
 				padding-left: @menusize;
 				padding-right: @menusize / 2;
