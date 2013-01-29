@@ -1,11 +1,13 @@
 <?php header('Content-Type: text/html; charset=utf-8') ?>
 <!doctype html>
-<meta charset='utf-8'>
-<!--[if lt IE 9]>
-<script src="dist/html5shiv.js"></script>
-<![endif]-->
-<link rel='stylesheet' href='css/style.css'>
-<title>Agent</title>
+<head>
+	<meta charset='utf-8'>
+	<!--[if lt IE 9]>
+	<script src="dist/html5shiv.js"></script>
+	<![endif]-->
+	<link rel='stylesheet' href='css/style.css'>
+	<title>Agent</title>
+</head>
 
 <body>
 	<div id='main'>
