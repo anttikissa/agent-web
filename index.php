@@ -33,7 +33,7 @@ if (!$current_page) {
 	$current_page = '.';
 }
 
-print("Page is " . $current_page);
+//print("Page is " . $current_page);
 
 $pages = array(
 	'.' => 'Etusivu',

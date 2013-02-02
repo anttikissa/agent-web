@@ -68,6 +68,7 @@ article {
   font-size: 11px;
   line-height: 13px;
 }
+article h1,
 article h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 18px;
@@ -75,6 +76,7 @@ article h2 {
   font-weight: normal;
   margin: 10px 20px 3px 20px;
 }
+article h1:first-child,
 article h2:first-child {
   margin-top: 0;
 }
