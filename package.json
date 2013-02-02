@@ -20,6 +20,7 @@
   "devDependencies": {
     "less": "~1.3.3",
     "watch-file": "0.0.4",
-    "coffee-script": "~1.4.0"
+    "coffee-script": "~1.4.0",
+    "pretext": "~0.1.0"
   }
 }

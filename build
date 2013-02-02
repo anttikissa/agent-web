@@ -13,4 +13,10 @@ echo `ts` Building.
 lessc src/style.less > css/style.css
 coffee -c -o js/ src/script.coffee 
 
+pretext content/.pre > content.html
+for file in content/*.pre
+do
+	pretext $file > ./`basename $file .pre`/content.html
+done
+
 echo `ts` Build finished.
