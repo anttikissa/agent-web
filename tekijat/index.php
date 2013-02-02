@@ -1,1 +1,5 @@
-../level1-index.php
+<?php
+	$level = 1;
+	chdir('..');
+	include('index.php');
+?>
