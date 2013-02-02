@@ -107,6 +107,10 @@ header {
 #main {
   background: url(../img/main_bg.png);
 }
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
 nav ul a:hover {
   color: red;
   cursor: pointer;

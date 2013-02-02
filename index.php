@@ -1,9 +1,22 @@
-<?php header('Content-Type: text/html; charset=utf-8') ?>
+<?php
+
+header('Content-Type: text/html; charset=utf-8');
+
+$pages = array(
+	'etusivu',
+	'agent',
+	'liput',
+	'tekijat',
+	'sponsorit',
+	'mikaspeksi'
+);
+
+?>
 <!doctype html>
 <head>
 	<meta charset='utf-8'>
 	<!--[if lt IE 9]>
-	<script src="dist/html5shiv.js"></script>
+	<script src="js/html5shiv.js"></script>
 	<![endif]-->
 	<link rel='stylesheet' href='css/style.css'>
 	<title>Agent</title>
@@ -13,6 +26,13 @@
 	<div id='main'>
 		<nav>
 			<ul>
+				<?php
+					foreach ($pages as $page) {
+						print("<li><a href='" . $page . "'>" . $page .
+						"</a></li>");
+					}
+				?>
+
 				<li><a>Etusivu</a>
 					<ul>
 						<li><a>Menu</a>
