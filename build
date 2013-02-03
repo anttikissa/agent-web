@@ -11,12 +11,15 @@ function ts() {
 echo `ts` Building.
 
 lessc src/style.less > css/style.css
+lessc src/style2.less > css/style2.css
 coffee -c -o js/ src/script.coffee 
 
-pretext content/.pre > content.html
+pretext content/_.pre > content.html
 for file in content/*.pre
 do
-	pretext $file > ./`basename $file .pre`/content.html
+	if [[ $file != content/_.pre ]]; then
+		pretext $file > ./`basename $file .pre`/content.html
+	fi
 done
 
 echo `ts` Build finished.
