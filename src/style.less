@@ -12,9 +12,11 @@
 // |  w1  |  w2  |  w3  | 
 
 @w1: 130px;
-@w2: 130px;
-@w3: 290px;
-@total-width: @w1 + @w2 + @w3;
+//@w2: 130px;
+@content-offset: 130px;
+@w3: 290px + @content-offset;
+@total-width: @w1 + @w3;
+//@total-width: @w1 + @w2 + @w3;
 
 @menusize: 18px;
 @padding: 20px;
@@ -140,6 +142,7 @@ body {
 //	background: url(../img/banneri.png);
 //	background-position: center top;
 //	background-repeat: no-repeat;
+	position: relative;
 }
 
 #lines {
@@ -164,8 +167,8 @@ body {
 
 	#content-wrapper {
 		position: relative;
-		width: 420px;
-		margin-left: -210px;
+		width: @total-width;
+		margin-left: -((@total-width + @content-offset) / 2);
 		#main {
 			background: white;
 		}
@@ -222,6 +225,7 @@ article {
 }
 
 footer a {
+	padding-left: @w1;
 	color: red;
 }
 
