@@ -92,13 +92,13 @@ $pages = array(
 				</article>
 
 				<div style='clear: both'></div>
+
+				<footer>
+					<a>teekkarispeksi.fi</a>
+				</footer>
 			</div>
 		</div>
 
-<!--	<footer>
-		<a>teekkarispeksi.fi</a>
-	</footer>
--->
 	</div>
 </body>
 
