@@ -57,9 +57,17 @@ $pages = array(
 </head>
 
 <body>
-	<div id='main'>
-		<nav>
-			<ul>
+	<div id='lines'>
+	</div>
+
+	<div id='wrapper'>
+		<div id='header'>
+		</div>
+
+		<div id='content-wrapper'
+			<div id='main'>
+				<nav>
+					<ul>
 
 <?php
 	foreach ($pages as $page => $title) {
@@ -70,24 +78,28 @@ $pages = array(
 		}
 
 		// TODO keksi jostain joku hierarkia
-		print("<ul> <li class='current'><a>Tarina</a> <li><a>Hahmot</a> </ul>");
-		print("</li>");
+		//print("<ul> <li class='current'><a>Tarina</a> <li><a>Hahmot</a> </ul>");
+		//print("</li>");
 	}
 ?>
-			</ul>
-		</nav>
+					</ul>
+				</nav>
 
-		<article>
+				<article>
 
 <?php include($current_page . '/content.html'); ?>
 
-		</article>
+				</article>
 
-		<div style='clear: both'></div>
-	</div>
-	<footer>
+				<div style='clear: both'></div>
+			</div>
+		</div>
+
+<!--	<footer>
 		<a>teekkarispeksi.fi</a>
 	</footer>
+-->
+	</div>
 </body>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
