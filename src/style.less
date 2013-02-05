@@ -12,11 +12,11 @@
 // |  w1  |  w2  |  w3  | 
 
 @w1: 130px;
-//@w2: 130px;
 @content-offset: 130px;
 @w3: 290px + @content-offset;
 @total-width: @w1 + @w3;
-//@total-width: @w1 + @w2 + @w3;
+
+@banner-width: 1428px;
 
 @menusize: 18px;
 @padding: 20px;
@@ -162,7 +162,7 @@ body {
 		margin-left: -50%;
 		margin-top: -@header-height;
 		height: @header-height;
-		width: 1428px;
+		width: @banner-width;
 		/* background: url(../img/banneri.png);*/
 		background-repeat: no-repeat;
 		z-index: -2;
@@ -239,26 +239,40 @@ footer a {
 	text-decoration: none;
 }
 
-#team {
-	div {
-		width: 50%;
-		height: 70%;
+@image-height: 400px;
 
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		
-		position: fixed;
-		bottom: 0;
-		z-index: -1;
-	}
-	#kgb {
-		background-position: bottom left;
-		left: 0;
-		background-image: url('../img/team_kgb-1000x.png');
-	}
-	#cia {
-		background-position: bottom right;
-		right: 0;
-		background-image: url('../img/team_cia-1000x.png');
-	}
+#team-wrapper {
+	width: 100%;
+	height: 50%;
+	position: fixed;
+	bottom: 0;
+}
+
+#team {
+	margin: 0 (@w3 / 2);
+	height: 100%;
+}
+
+#kgb, #cia {
+	width: 50%;
+	height: 100%;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#kgb {
+	float: left;
+	left: -@w3 / 2;
+
+	background-position: bottom right;
+	background-image: url('../img/team_kgb-1000x.png');
+}
+
+#cia {
+	float: right;
+	right: -@w3 / 2;
+	
+	background-position: bottom left;
+	background-image: url('../img/team_cia-1000x.png');
 }
