@@ -22,10 +22,11 @@ $ ->
 	window.onpopstate = (ev) ->
 		if ev.state != null
 			$('article').load(ev.state + '/content.html')
-		
+
 	# hackish way to prevent scrolling
 	$(window).scroll (e) ->
-		$('body').scrollLeft(0)
-		e.stopPropagation()
+		unless navigator.userAgent.match(/i(Pad|Phone|Pod)/)
+			$('body').scrollLeft(0)
+			e.stopPropagation()
  
 #		console.log $('body').scrollLeft()
