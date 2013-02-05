@@ -2,6 +2,23 @@
 (function() {
 
   $(function() {
+    var primaries;
+    primaries = $('nav > ul > li > a');
+    primaries.click(function(ev) {
+      var href,
+        _this = this;
+      ev.preventDefault();
+      $(primaries).each(function(idx, it) {
+        if (it === _this) {
+          return $(_this).parent().addClass('current');
+        } else {
+          return $(it).parent().removeClass('current');
+        }
+      });
+      href = this.href;
+      $('article').load(href + '/content.html');
+      return window.history.pushState(href, "", href);
+    });
     return $('a.fancybox').fancybox();
   });
 

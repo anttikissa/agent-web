@@ -1,25 +1,20 @@
 $ ->
 	# Fake proper navigation
-#	primaries = $('nav > ul > li')
-#	primaries.click ->
-#		console.log "primary click"
-#		$(primaries).each (idx, it) =>
-#			if it == this
-#				$(this).addClass 'current'
-#				$(this).find('li').removeClass 'current'
-#				$(this).find('li:first').addClass 'current'
-#			else
-#				$(it).removeClass 'current'
+	primaries = $('nav > ul > li > a')
+	primaries.click (ev) ->
+		ev.preventDefault()
 
-# 	secondaries = primaries.find('li')
-# 	secondaries.click (ev) ->
-# 		console.log "secondary click"
-# 		$(secondaries).each (idx, it) =>
-# 			if it == this
-# 				$(this).addClass 'current'
-# 			else
-# 				$(it).removeClass 'current'
-# 		ev.stopPropagation()
+		# console.log "primary click"
+		$(primaries).each (idx, it) =>
+			if it == this
+				$(this).parent().addClass 'current'
+			else
+				$(it).parent().removeClass 'current'
 
+		href = this.href
+		$('article').load(href + '/content.html')
+		window.history.pushState(href, "", href)
+
+	# fancybox images
 	$('a.fancybox').fancybox()
 	
