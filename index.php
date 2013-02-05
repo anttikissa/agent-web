@@ -75,7 +75,9 @@ $pages = array(
 <?php
 	foreach ($pages as $page => $title) {
 		if ($current_page == $page) {
-			print("<li class='current'><a href='$page'>$title</a>");
+			$link = $page;
+//			$link = $page == 'liput' ? 'http://teekkarispeksi.nappikauppa.net/' : $page;
+			print("<li class='current'><a href='$link'>$title</a>");
 		} else {
 			print("<li><a href='$page'>$title</a>");
 		}
