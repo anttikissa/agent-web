@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+THUMB_MAXSIZE=380x # width x height
+
+for f in content/galleria/*
+do
+	cp $f img/galleria/large/$(basename $f)
+	convert $f -resize $THUMB_MAXSIZE img/galleria/thumb/$(basename $f)
+done
+
+rm galleria/content.html && php galleria/generate_html.php > galleria/content.html
