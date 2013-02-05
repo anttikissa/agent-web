@@ -183,6 +183,7 @@ body {
 }
 
 // Wrappers are used to center elements on screens smaller than element size.
+
 #wrapper {
 	position: absolute;
 	left: 50%;
@@ -208,12 +209,6 @@ body {
 	}
 }
 
-//header {
-//	background: url(../img/banneri.png);
-//	background-position: center 0px;
-//}
-
-
 #main {
 	background: url(../img/main_bg.png);
 }
@@ -227,11 +222,14 @@ nav ul {
 		color: red;
 		cursor: pointer;
 	}
-	.current {
+	li.current {
 		background-image: url(../img/diamond_base.png);
 		background-size: @menusize @menusize * 2;
 		background-position: 100% 50%;
 		background-repeat: no-repeat;
+		a {
+			color: red;
+		}
 	}
 	ul {
 		color: black;
