@@ -23,7 +23,7 @@ do
 	fi
 done
 
-for ex in jpg png
+for ex in png
 do
 	for file in content/img/*.$ex
 	do
