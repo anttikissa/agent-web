@@ -66,6 +66,7 @@ $pages = array(
 			line-height: 36px;
 			margin-bottom: 19px;
 			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
+			<?php if ($_GET['test'] == 3) print('font-weight: bold; border-bottom: 1px solid red; text-transform: uppercase;'); ?>
 		}
 		article h2 {
 			font-size: 16px;
@@ -75,6 +76,7 @@ $pages = array(
 			text-transform: lowercase;
 			letter-spacing: 2px;
 			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
+			<?php if ($_GET['test'] == 3) print('text-align: center;') ?>
 			position: relative;
 			top: -1px;
 		}
@@ -92,6 +94,7 @@ $pages = array(
 		}
 		article p.short {
 			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
+			<?php if ($_GET['test'] == 3) print('text-align: center;') ?>
 		}
 	</style>
 	<?php } ?>
