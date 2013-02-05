@@ -44,8 +44,7 @@ nav ul li.current ul {
 article {
   float: right;
   width: 420px;
-  padding: 0;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 article p {
   margin-left: 20px;
