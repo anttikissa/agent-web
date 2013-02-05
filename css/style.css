@@ -44,7 +44,8 @@ nav ul li.current ul {
 article {
   float: right;
   width: 420px;
-  padding: 20px 0;
+  padding: 0;
+  padding-bottom: 20px;
 }
 article p {
   margin-left: 20px;
@@ -166,22 +167,29 @@ article a {
   color: red;
 }
 article .fancybox img {
-  padding: 1em;
-}
-article .left {
-  float: left;
-}
-article .left img {
-  padding-left: 0;
-}
-article .right {
-  float: right;
-}
-article .right img {
-  padding-right: 0;
+  padding: 20px;
 }
 footer a {
   padding-left: 130px;
   color: red;
   text-decoration: none;
+}
+#team div {
+  width: 50%;
+  height: 70%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+#team #kgb {
+  background-position: bottom left;
+  left: 0;
+  background-image: url('../img/team_kgb-1000x.png');
+}
+#team #cia {
+  background-position: bottom right;
+  right: 0;
+  background-image: url('../img/team_cia-1000x.png');
 }

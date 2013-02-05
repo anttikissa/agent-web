@@ -71,7 +71,8 @@ article {
 	float: right;
 
 	width: @w3;
-	padding: @padding 0;
+	padding: 0;
+	padding-bottom: @padding;
 
 	p {
 		margin-left: @padding;
@@ -225,20 +226,7 @@ article {
 	}
 
 	.fancybox img {
-		padding: 1em;
-	}
-
-	.left {
-		float: left;
-		img {
-			padding-left: 0;
-		}
-	}
-	.right {
-		float: right;
-		img {
-			padding-right: 0;
-		}
+		padding: @padding;
 	}
 }
 
@@ -246,4 +234,28 @@ footer a {
 	padding-left: @w1;
 	color: red;
 	text-decoration: none;
+}
+
+#team {
+	div {
+		width: 50%;
+		height: 70%;
+
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		
+		position: fixed;
+		bottom: 0;
+		z-index: -1;
+	}
+	#kgb {
+		background-position: bottom left;
+		left: 0;
+		background-image: url('../img/team_kgb-1000x.png');
+	}
+	#cia {
+		background-position: bottom right;
+		right: 0;
+		background-image: url('../img/team_cia-1000x.png');
+	}
 }
