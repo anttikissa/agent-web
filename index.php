@@ -91,9 +91,11 @@ $pages = array(
 				</nav>
 
 				<article>
+					<div>
 
 <?php include($current_page . '/content.html'); ?>
 
+					</div>
 				</article>
 
 				<div style='clear: both'></div>

@@ -12,14 +12,22 @@ $ ->
 				$(it).parent().removeClass 'current'
 
 		href = this.href
-		$('article').load(href + '/content.html')
-		window.history.pushState(href, "", href)
+		# console.log "href #{href}, window.location #{window.location}"
+		unless href == window.location.toString()
+			article = $('article > div')
+			article.fadeOut(200, ->
+				article.load(href + '/content.html', ->
+					article.fadeIn(200)
+				)
+			)
+			window.history.pushState(href, "", href)
 
 	# fancybox images
 	$('a.fancybox').fancybox()
 
 	window.history.pushState window.location.href, "", window.location.href
 	window.onpopstate = (ev) ->
+		# console.log "onpopstate #{ev.state}"
 		if ev.state != null
 			$('article').load(ev.state + '/content.html')
 
