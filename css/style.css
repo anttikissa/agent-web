@@ -104,6 +104,10 @@ body {
   margin-right: 50%;
   background: url(../img/banner_extension.png);
   height: 160px;
+  position: relative;
+  /* for z-index */
+
+  z-index: -5;
 }
 #wrapper {
   position: absolute;
