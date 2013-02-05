@@ -71,13 +71,40 @@ article {
 article h1,
 article h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 18px;
-  line-height: 13px;
   font-weight: normal;
   margin: 10px 20px 3px 20px;
 }
 article h1:first-child,
 article h2:first-child {
+  margin-top: 0;
+}
+article p.intro + h1 {
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+article h1 {
+  font-size: 38px;
+  line-height: 36px;
+  margin-bottom: 19px;
+}
+article h2 {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 20px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  position: relative;
+  top: -1px;
+}
+article p.intro {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+article p {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 18px;
   margin-top: 0;
 }
 nav {
@@ -175,6 +202,9 @@ article .fancybox img {
   border: 0;
   padding: 20px;
 }
+article a.galleria.fancybox img {
+  padding-top: 0;
+}
 footer a {
   padding-left: 130px;
   color: red;
@@ -198,7 +228,4 @@ footer a {
   background-position: bottom right;
   right: 0;
   background-image: url('../img/team_cia-1000x.png');
-}
-article a.galleria.fancybox img {
-  padding-top: 0;
 }
