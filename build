@@ -21,4 +21,10 @@ do
 	fi
 done
 
+for file in content/img/*.jpg
+do
+	cp $file ./img/content/$(basename $file)
+	convert $file -resize 500x150 ./img/content/$(basename $file .jpg)-thumb.jpg
+done
+
 echo `ts` Build finished.

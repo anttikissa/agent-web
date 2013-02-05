@@ -53,6 +53,8 @@ $pages = array(
 	<![endif]-->
 	<base href='<?= $base ?>'>
 	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+
 	<title>Agent</title>
 
 	<?php if ($_GET['test']) { ?>
@@ -147,5 +149,6 @@ $pages = array(
 </body>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<script src='js/fancybox/jquery.fancybox.js'></script>
 <script src='js/script.js'></script>
 

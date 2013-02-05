@@ -20,4 +20,6 @@ $ ->
 # 			else
 # 				$(it).removeClass 'current'
 # 		ev.stopPropagation()
+
+	$('a.fancybox').fancybox()
 	
