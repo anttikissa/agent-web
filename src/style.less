@@ -309,6 +309,27 @@ footer a {
 	background-image: url('../img/team_cia-1000x.png');
 }
 
+#sponsors {
+	width: @w3;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -@w3/2;
+	height: 40px;
+	background: white;
+
+	img {
+		vertical-align: center;
+	}
+	img + img {
+		padding-left:  15px;
+	}
+	img:last-child {
+		position: relative;
+		top: 4px;
+	}
+}
+
 .sponsor {
 	padding: 10px 0;
 }
