@@ -41,7 +41,8 @@ $pages = array(
 	'liput' => 'Liput',
 	'tekijat' => 'Tekijät',
 	'sponsorit' => 'Sponsorit',
-	'mikaspeksi' => 'Mikä speksi?'
+	'mikaspeksi' => 'Mikä speksi?',
+	'galleria' => 'Galleria',
 );
 
 ?>
@@ -56,50 +57,6 @@ $pages = array(
 	<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
 
 	<title>Agent</title>
-
-	<?php if (1 || $_GET['test']) { ?>
-	<style>
-		article p.intro + h1 {
-			margin-top: 5px;
-			margin-bottom: 13px;
-		}
-		article h1 {
-			font-size: 38px;
-			line-height: 36px;
-			margin-bottom: 19px;
-			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
-			<?php if ($_GET['test'] == 3) print('font-weight: bold; border-bottom: 1px solid red; text-transform: uppercase;'); ?>
-		}
-		article h2 {
-			font-size: 16px;
-			line-height: 18px;
-			margin: 0 20px;
-			font-variant: small-caps;
-			text-transform: lowercase;
-			letter-spacing: 2px;
-			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
-			<?php if ($_GET['test'] == 3) print('text-align: center;') ?>
-			position: relative;
-			top: -1px;
-		}
-		article p.intro {
-			margin-top: 1px;
-			margin-bottom: 1px;
-			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
-		}
-		article p {
-			font-size: 13px;
-			line-height: 18px;
-			margin-bottom: 18px;
-			margin-top: 0;
-			<?php if ($_GET['test'] == 2) print('text-align: justify;') ?>
-		}
-		article p.short {
-			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
-			<?php if ($_GET['test'] == 3) print('text-align: center;') ?>
-		}
-	</style>
-	<?php } ?>
 </head>
 
 <body>
