@@ -57,7 +57,7 @@ $pages = array(
 
 	<title>Agent</title>
 
-	<?php if ($_GET['test']) { ?>
+	<?php if (1 || $_GET['test']) { ?>
 	<style>
 		article p.intro + h1 {
 			margin-top: 5px;
@@ -145,6 +145,10 @@ $pages = array(
 			</div>
 		</div>
 
+	</div>
+	<div id="team">
+		<div id="kgb"></div>
+		<div id="cia"></div>
 	</div>
 </body>
 
