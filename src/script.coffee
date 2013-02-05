@@ -18,6 +18,7 @@ $ ->
 	# fancybox images
 	$('a.fancybox').fancybox()
 
+	window.history.pushState window.location.href, "", window.location.href
 	window.onpopstate = (ev) ->
 		if ev.state != null
 			$('article').load(ev.state + '/content.html')

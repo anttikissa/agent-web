@@ -20,7 +20,9 @@
       return window.history.pushState(href, "", href);
     });
     $('a.fancybox').fancybox();
+    window.history.pushState(window.location.href, "", window.location.href);
     return window.onpopstate = function(ev) {
+      console.log(ev);
       if (ev.state !== null) {
         return $('article').load(ev.state + '/content.html');
       }
