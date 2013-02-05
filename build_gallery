@@ -1,5 +1,9 @@
 #!/bin/bash
 
+./build
+
+echo 'Building gallery.'
+
 cd $(dirname $0)
 
 THUMB_MAXSIZE=380x # width x height
@@ -10,4 +14,6 @@ do
 	convert $f -resize $THUMB_MAXSIZE img/galleria/thumb/$(basename $f)
 done
 
-rm galleria/content.html && php galleria/generate_html.php > galleria/content.html
+php galleria/generate_html.php >> galleria/content.html
+
+echo 'All done.'
