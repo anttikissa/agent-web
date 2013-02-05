@@ -64,7 +64,8 @@ $pages = array(
 		article h1 {
 			font-size: 38px;
 			line-height: 36px;
-			margin-bottom: 0;
+			margin-bottom: 19px;
+			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
 		}
 		article h2 {
 			font-size: 16px;
@@ -73,18 +74,24 @@ $pages = array(
 			font-variant: small-caps;
 			text-transform: lowercase;
 			letter-spacing: 2px;
+			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
 			position: relative;
 			top: -1px;
 		}
 		article p.intro {
 			margin-top: 1px;
 			margin-bottom: 1px;
+			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
 		}
 		article p {
 			font-size: 13px;
 			line-height: 18px;
 			margin-bottom: 18px;
 			margin-top: 0;
+			<?php if ($_GET['test'] == 2) print('text-align: justify;') ?>
+		}
+		article p.short {
+			<?php if ($_GET['test'] == 2) print('text-align: center;') ?>
 		}
 	</style>
 	<?php } ?>
@@ -128,7 +135,7 @@ $pages = array(
 				<div style='clear: both'></div>
 
 				<footer>
-					<a>teekkarispeksi.fi</a>
+					<a href='http://teekkarispeksi.fi/'>teekkarispeksi.fi</a>
 				</footer>
 			</div>
 		</div>

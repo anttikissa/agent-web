@@ -168,4 +168,5 @@ article a {
 footer a {
   padding-left: 130px;
   color: red;
+  text-decoration: none;
 }
