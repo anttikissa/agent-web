@@ -19,7 +19,12 @@
       $('article').load(href + '/content.html');
       return window.history.pushState(href, "", href);
     });
-    return $('a.fancybox').fancybox();
+    $('a.fancybox').fancybox();
+    return window.onpopstate = function(ev) {
+      if (ev.state !== null) {
+        return $('article').load(ev.state + '/content.html');
+      }
+    };
   });
 
 }).call(this);

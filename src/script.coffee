@@ -17,4 +17,8 @@ $ ->
 
 	# fancybox images
 	$('a.fancybox').fancybox()
+
+	window.onpopstate = (ev) ->
+		if ev.state != null
+			$('article').load(ev.state + '/content.html')
 	
