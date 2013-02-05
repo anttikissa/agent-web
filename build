@@ -2,7 +2,7 @@
 
 cd $(dirname $0)
 
-THUMB_MAXSIZE=100x150 # width x height
+THUMB_MAXSIZE=380x # width x height
 
 export PATH=$PATH:./node_modules/.bin
 
@@ -23,10 +23,13 @@ do
 	fi
 done
 
-for file in content/img/*.jpg
+for ex in jpg png
 do
-	cp $file ./img/content/$(basename $file)
-	convert $file -resize $THUMB_MAXSIZE ./img/content/$(basename $file .jpg)-thumb.jpg
+	for file in content/img/*.$ex
+	do
+		cp $file ./img/content/$(basename $file)
+		convert $file -resize $THUMB_MAXSIZE ./img/content/$(basename $file .$ex)-thumb.$ex
+	done
 done
 
 echo `ts` Build finished.
