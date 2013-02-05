@@ -33,4 +33,6 @@ do
 	done
 done
 
+./build_gallery
+
 echo `ts` Build finished.

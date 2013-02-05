@@ -1,9 +1,5 @@
 #!/bin/bash
 
-./build
-
-echo 'Building gallery.'
-
 cd $(dirname $0)
 
 THUMB_MAXSIZE=380x # width x height
@@ -16,5 +12,3 @@ do
 done
 
 php galleria/generate_html.php >> galleria/content.html
-
-echo 'All done.'
