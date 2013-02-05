@@ -41,7 +41,8 @@ $pages = array(
 	'liput' => 'Liput',
 	'tekijat' => 'Tekijät',
 	'sponsorit' => 'Sponsorit',
-	'mikaspeksi' => 'Mikä speksi?'
+	'mikaspeksi' => 'Mikä speksi?',
+	'galleria' => 'Galleria',
 );
 
 ?>
