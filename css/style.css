@@ -115,8 +115,10 @@ body {
   margin-top: -160px;
   height: 160px;
   width: 1428px;
-  background: url(../img/banneri.png);
+  /* background: url(../img/banneri.png);*/
+
   background-repeat: no-repeat;
+  z-index: -2;
 }
 #wrapper #content-wrapper {
   position: relative;

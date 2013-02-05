@@ -108,6 +108,7 @@ $pages = array(
 
 	<div id='wrapper'>
 		<div id='banner'>
+			<img src="img/banneri.png">
 		</div>
 
 		<div id='content-wrapper'
