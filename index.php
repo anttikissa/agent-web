@@ -101,8 +101,11 @@ $pages = array(
 				<div style='clear: both'></div>
 
 				<footer>
+				</footer>
+<!--				<footer>
 					<a href='http://teekkarispeksi.fi/'>teekkarispeksi.fi</a>
 				</footer>
+-->
 			</div>
 		</div>
 
@@ -114,6 +117,15 @@ $pages = array(
 			<div id="cia"></div>
 		</div>
 	</div>
+
+	<div id="sponsors">
+		<center>
+			<img src='img/small_seepsula.png'>
+			<img src='img/small_yit.png'>
+			<img src='img/small_aw.png'>
+		</center>
+	</div>
+
 </body>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
