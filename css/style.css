@@ -100,16 +100,16 @@ html {
 body {
   position: relative;
 }
-#lines {
+#banner-extension {
   margin-right: 50%;
-  background: white;
+  background: url(../img/banner_extension.png);
   height: 160px;
 }
 #wrapper {
   position: absolute;
   left: 50%;
 }
-#wrapper #header {
+#wrapper #banner {
   position: relative;
   margin-left: -50%;
   margin-top: -160px;

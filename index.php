@@ -14,7 +14,7 @@ function current_url() {
 	return $result;
 }
 
-$base = current_url();
+$base = preg_replace('/\?.*$/', '', current_url());
 
 $current_page = '';
 
@@ -54,14 +54,48 @@ $pages = array(
 	<base href='<?= $base ?>'>
 	<link rel='stylesheet' href='css/style.css'>
 	<title>Agent</title>
+
+	<?php if ($_GET['test']) { ?>
+	<style>
+		article p.intro + h1 {
+			margin-top: 5px;
+			margin-bottom: 13px;
+		}
+		article h1 {
+			font-size: 38px;
+			line-height: 36px;
+			margin-bottom: 0;
+		}
+		article h2 {
+			font-size: 16px;
+			line-height: 18px;
+			margin: 0 20px;
+			font-variant: small-caps;
+			text-transform: lowercase;
+			letter-spacing: 2px;
+			position: relative;
+			top: -1px;
+		}
+		article p.intro {
+			margin-top: 1px;
+			margin-bottom: 1px;
+		}
+		article p {
+			font-size: 13px;
+			line-height: 18px;
+			margin-bottom: 18px;
+			margin-top: 0;
+		}
+	</style>
+	<?php } ?>
 </head>
 
 <body>
-	<div id='lines'>
+	<div id='banner-extension'>
 	</div>
 
 	<div id='wrapper'>
-		<div id='header'>
+		<div id='banner'>
 		</div>
 
 		<div id='content-wrapper'
