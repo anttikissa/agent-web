@@ -157,3 +157,4 @@ $pages = array(
 <script src='js/fancybox/jquery.fancybox.js'></script>
 <script src='js/script.js'></script>
 
+<!-- vahti ok -->
