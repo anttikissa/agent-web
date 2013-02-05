@@ -147,9 +147,12 @@ $pages = array(
 		</div>
 
 	</div>
-	<div id="team">
-		<div id="kgb"></div>
-		<div id="cia"></div>
+
+	<div id="team-wrapper">
+		<div id="team">
+			<div id="kgb"></div>
+			<div id="cia"></div>
+		</div>
 	</div>
 </body>
 
