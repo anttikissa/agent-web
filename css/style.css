@@ -180,22 +180,33 @@ footer a {
   color: red;
   text-decoration: none;
 }
-#team div {
-  width: 50%;
-  height: 70%;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
+#team-wrapper {
+  width: 100%;
+  height: 50%;
   position: fixed;
   bottom: 0;
-  z-index: -1;
 }
-#team #kgb {
-  background-position: bottom left;
-  left: 0;
+#team {
+  margin: 0 210px;
+  height: 100%;
+}
+#kgb,
+#cia {
+  width: 50%;
+  height: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#kgb {
+  float: left;
+  left: -210px;
+  background-position: bottom right;
   background-image: url('../img/team_kgb-1000x.png');
 }
-#team #cia {
-  background-position: bottom right;
-  right: 0;
+#cia {
+  float: right;
+  right: -210px;
+  background-position: bottom left;
   background-image: url('../img/team_cia-1000x.png');
 }
