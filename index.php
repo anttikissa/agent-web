@@ -119,6 +119,7 @@ $pages = array(
 	</div>
 
 	<div id="sponsors">
+		<h2>Pääyhteistyökumppanit</h2>
 		<center>
 			<img src='img/small_seepsula.png'>
 			<img src='img/small_yit.png'>

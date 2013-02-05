@@ -143,6 +143,22 @@ article {
 	}
 }
 
+#sponsors h2 {
+	color: black;
+	
+	.font-gill-sans;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+	position: relative;
+	top: -1px;
+	@lowmargin: -4px;
+	margin: 4px @padding @lowmargin @padding;
+}
+
 nav {
 	.font-gill-sans;
 	font-size: 12px;
@@ -170,6 +186,10 @@ body {
 	position: relative;
 	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
 }
 
 // Banner
@@ -315,8 +335,9 @@ footer a {
 	bottom: 0;
 	left: 50%;
 	margin-left: -@w3/2;
-	height: 40px;
+	height: 40px + 18px;
 	background: white;
+//	border-top: 1px solid #888;
 
 	img {
 		vertical-align: center;
