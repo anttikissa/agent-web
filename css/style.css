@@ -165,6 +165,21 @@ article {
 article a {
   color: red;
 }
+article .left {
+  float: left;
+}
+article .left img {
+  padding-left: 0;
+}
+article .right {
+  float: right;
+}
+article .right img {
+  padding-right: 0;
+}
+article .fancybox img {
+  padding: 1em;
+}
 footer a {
   padding-left: 130px;
   color: red;
