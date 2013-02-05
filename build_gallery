@@ -7,8 +7,10 @@ LARGE_MAXSIZE=1000x
 
 for f in content/galleria/*
 do
-	convert $f -resize $LARGE_MAXSIZE img/galleria/large/$(basename $f)
-	convert $f -resize $THUMB_MAXSIZE img/galleria/thumb/$(basename $f)
+	if [ -f $f ]; then
+		convert $f -resize $LARGE_MAXSIZE img/galleria/large/$(basename $f)
+		convert $f -resize $THUMB_MAXSIZE img/galleria/thumb/$(basename $f)
+	fi
 done
 
 php galleria/generate_html.php >> galleria/content.html
