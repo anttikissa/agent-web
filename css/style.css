@@ -172,6 +172,7 @@ article a {
   color: red;
 }
 article .fancybox img {
+  border: 0;
   padding: 20px;
 }
 footer a {
