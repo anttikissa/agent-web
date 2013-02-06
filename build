@@ -28,7 +28,7 @@ for ex in png
 do
 	for file in content/img/*.$ex
 	do
-		convert $file -resize $LARGE_MAXSIZE ./img/content/$(basename $file)
+		convert $file -resize $LARGE_MAXSIZE\> ./img/content/$(basename $file)
 		convert $file -resize $THUMB_MAXSIZE ./img/content/$(basename $file .$ex)-thumb.$ex
 	done
 done
