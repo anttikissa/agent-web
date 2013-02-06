@@ -59,7 +59,7 @@ $pages = array(
 	<link rel='stylesheet' href='css/ie8.css'>
 	<![endif]-->
 
-	<title>Agent</title>
+	<title>Agent - <?= $pages[$current_page] ?></title>
 
 	<meta property="og:image" content="http://teekkarispeksi.fi/2013/img/fb-ikoni.jpg"/>
 	<meta property="og:description"
