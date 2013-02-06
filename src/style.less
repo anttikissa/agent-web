@@ -17,11 +17,11 @@
 @total-width: @w1 + @w3;
 
 @banner-width: 1428px;
+@banner-height: 160px;
+@banner-real-height: 300px;
 
 @menusize: 18px;
 @padding: 20px;
-
-@header-height: 160px;
 
 #main {
 	width: @total-width;
@@ -197,37 +197,23 @@ a {
 #banner-extension {
 	margin-right: 50%;
 	background: url(../img/banner_extension.png);
-	height: @header-height;
+	height: @banner-height;
 	position: relative; /* for z-index */
 	z-index: -5;
 }
 
-// Wrappers are used to center elements on screens smaller than element size.
-
-#wrapper {
+#banner {
 	position: absolute;
-	left: 50%;
+	top: 0;
+	width: 100%;
+	height: @banner-real-height;
+	z-index: -2;
 
-	#banner {
-		position: relative;
-		margin-left: -50%;
-		margin-top: -@header-height;
-		height: @header-height;
-		width: @banner-width;
-		/* background: url(../img/banneri.png);*/
-		background-repeat: no-repeat;
-		z-index: -2;
-	}
-
-	#content-wrapper {
-		position: relative;
-		width: @total-width;
-		margin-left: -((@total-width + @content-offset) / 2);
-		#main {
-			background: white;
-		}
-	}
+	background: url(../img/banneri.png);
+	background-position: 50% 0;
 }
+
+// Wrappers are used to center elements on screens smaller than element size.
 
 #main {
 	background: url(../img/main_bg.png);

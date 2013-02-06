@@ -67,53 +67,38 @@ $pages = array(
 	<div id='banner-extension'>
 	</div>
 
-	<div id='wrapper'>
-		<div id='banner'>
-			<img src="img/banneri.png">
-		</div>
+	<div id='banner'>
+	</div>
 
-		<div id='content-wrapper'>
-			<nav>
-				<ul>
+	<div id='main'>
+		<nav>
+			<ul>
 
 <?php
 	foreach ($pages as $page => $title) {
 		if ($current_page == $page) {
 			$link = $page;
-//			$link = $page == 'liput' ? 'http://teekkarispeksi.nappikauppa.net/' : $page;
 			print("<li class='current'><a href='$link'>$title</a>");
 		} else {
 			print("<li><a href='$page'>$title</a>");
 		}
-
-		// TODO keksi jostain joku hierarkia
-		//print("<ul> <li class='current'><a>Tarina</a> <li><a>Hahmot</a> </ul>");
-		//print("</li>");
 	}
 ?>
-					</ul>
-				</nav>
+			</ul>
+		</nav>
 
-				<article>
-<!--					<p class='debug'>hello</p> -->
-
-					<div>
+		<article>
+			<div>
 
 <?php include($current_page . '/content.html'); ?>
 
-					</div>
-				</article>
-
-				<div style='clear: both'></div>
-
-				<footer>
-				</footer>
-<!--				<footer>
-					<a href='http://teekkarispeksi.fi/'>teekkarispeksi.fi</a>
-				</footer>
--->
 			</div>
-		</div>
+		</article>
+
+		<div style='clear: both'></div>
+
+		<footer>
+		</footer>
 
 	</div>
 
