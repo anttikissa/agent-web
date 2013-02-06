@@ -55,6 +55,9 @@ $pages = array(
 	<base href='<?= $base ?>'>
 	<link rel='stylesheet' href='css/style.css'>
 	<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+	<!--[if lt IE 9]>
+	<link rel='stylesheet' href='css/ie8.css'>
+	<![endif]-->
 
 	<title>Agent</title>
 
