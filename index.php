@@ -97,9 +97,6 @@ $pages = array(
 
 		<div style='clear: both'></div>
 
-		<footer>
-		</footer>
-
 	</div>
 
 	<div id="team-wrapper">
