@@ -1,4 +1,15 @@
 $ ->
+	# fancybox images
+	$('a.fancybox').fancybox()
+
+#	console.log "navigator is " + navigator.userAgent
+	ua = navigator.userAgent
+	safari = ua.match(/Safari/) && !ua.match(/Chrome/)
+	if safari
+#		$('.debug').html('safari detected, degrading');
+		return
+#	$('.debug').html('using javascript')
+
 	# Fake proper navigation
 	primaries = $('nav > ul > li > a')
 	primaries.click (ev) ->
@@ -22,19 +33,16 @@ $ ->
 			)
 			window.history.pushState(href, "", href)
 
-	# fancybox images
-	$('a.fancybox').fancybox()
-
 	window.history.pushState window.location.href, "", window.location.href
 	window.onpopstate = (ev) ->
 		# console.log "onpopstate #{ev.state}"
 		if ev.state != null
 			$('article').load(ev.state + '/content.html')
 
+	# $('.debug').html('navi ' + navigator.userAgent);
 	# hackish way to prevent scrolling
 	$(window).scroll (e) ->
-		unless navigator.userAgent.match(/i(Pad|Phone|Pod)/)
+		unless navigator.userAgent.match(/(i(Pad|Phone|Pod))|Safari/)
 			$('body').scrollLeft(0)
 			e.stopPropagation()
- 
-#		console.log $('body').scrollLeft()
+
