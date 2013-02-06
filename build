@@ -24,6 +24,12 @@ do
 	fi
 done
 
+if [[ "$1" == "-s" ]]
+then
+	echo `ts` 'Build finished. (Built small files only.)'
+	exit
+fi
+
 for ex in png
 do
 	for file in content/img/*.$ex

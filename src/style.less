@@ -17,11 +17,11 @@
 @total-width: @w1 + @w3;
 
 @banner-width: 1428px;
+@banner-height: 160px;
+@banner-real-height: 300px;
 
 @menusize: 18px;
 @padding: 20px;
-
-@header-height: 160px;
 
 #main {
 	width: @total-width;
@@ -29,6 +29,8 @@
 
 	position: relative;
 	left: -0.5 * @w1;
+
+	padding-bottom: 40px;
 }
 
 nav {
@@ -80,11 +82,6 @@ article {
 	p + p {
 		margin-top: @padding;
 	}
-}
-
-footer {
-	margin: 0 auto 40px auto;
-	text-align: center;
 }
 
 // Typography
@@ -169,12 +166,6 @@ nav {
 	text-transform: uppercase;
 }
 
-footer {
-	.font-gill-sans;
-	font-size: 16px;
-	line-height: 18px;
-}
-
 // Colors & decoration
 
 html {
@@ -197,37 +188,23 @@ a {
 #banner-extension {
 	margin-right: 50%;
 	background: url(../img/banner_extension.png);
-	height: @header-height;
+	height: @banner-height;
 	position: relative; /* for z-index */
 	z-index: -5;
 }
 
-// Wrappers are used to center elements on screens smaller than element size.
-
-#wrapper {
+#banner {
 	position: absolute;
-	left: 50%;
+	top: 0;
+	width: 100%;
+	height: @banner-real-height;
+	z-index: -2;
 
-	#banner {
-		position: relative;
-		margin-left: -50%;
-		margin-top: -@header-height;
-		height: @header-height;
-		width: @banner-width;
-		/* background: url(../img/banneri.png);*/
-		background-repeat: no-repeat;
-		z-index: -2;
-	}
-
-	#content-wrapper {
-		position: relative;
-		width: @total-width;
-		margin-left: -((@total-width + @content-offset) / 2);
-		#main {
-			background: white;
-		}
-	}
+	background: url(../img/banneri.png);
+	background-position: 50% 0;
 }
+
+// Wrappers are used to center elements on screens smaller than element size.
 
 #main {
 	background: url(../img/main_bg.png);
@@ -282,12 +259,6 @@ article {
 	a.galleria.fancybox img {
 		padding-top: 0;
 	}
-}
-
-footer a {
-	padding-left: @w1;
-	color: red;
-	text-decoration: none;
 }
 
 @image-height: 400px;
@@ -357,4 +328,5 @@ footer a {
 }
 .small-sponsor {
 	padding: 10px 20px;
+	vertical-align: middle;
 }

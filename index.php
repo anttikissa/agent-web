@@ -55,63 +55,50 @@ $pages = array(
 	<base href='<?= $base ?>'>
 	<link rel='stylesheet' href='css/style.css'>
 	<link rel='stylesheet' href='js/fancybox/jquery.fancybox.css'>
+	<!--[if lt IE 9]>
+	<link rel='stylesheet' href='css/ie8.css'>
+	<![endif]-->
 
-	<title>Agent</title>
+	<title>Agent - <?= $pages[$current_page] ?></title>
 
 	<meta property="og:image" content="http://teekkarispeksi.fi/2013/img/fb-ikoni.jpg"/>
 	<meta property="og:description"
-		   content="Impovisaatiolla höystetty musikaali moraalin ulkoistamisesta ja kiertoratalaserista"/>
+		   content="Impovisaatiolla höystetty musikaali moraalin ulkoistamisesta ja kiertoratalaserista." />
 </head>
 
 <body>
 	<div id='banner-extension'>
 	</div>
 
-	<div id='wrapper'>
-		<div id='banner'>
-			<img src="img/banneri.png">
-		</div>
+	<div id='banner'>
+	</div>
 
-		<div id='content-wrapper'>
-			<nav>
-				<ul>
+	<div id='main'>
+		<nav>
+			<ul>
 
 <?php
 	foreach ($pages as $page => $title) {
 		if ($current_page == $page) {
 			$link = $page;
-//			$link = $page == 'liput' ? 'http://teekkarispeksi.nappikauppa.net/' : $page;
 			print("<li class='current'><a href='$link'>$title</a>");
 		} else {
 			print("<li><a href='$page'>$title</a>");
 		}
-
-		// TODO keksi jostain joku hierarkia
-		//print("<ul> <li class='current'><a>Tarina</a> <li><a>Hahmot</a> </ul>");
-		//print("</li>");
 	}
 ?>
-					</ul>
-				</nav>
+			</ul>
+		</nav>
 
-				<article>
-					<div>
+		<article>
+			<div>
 
 <?php include($current_page . '/content.html'); ?>
 
-					</div>
-				</article>
-
-				<div style='clear: both'></div>
-
-				<footer>
-				</footer>
-<!--				<footer>
-					<a href='http://teekkarispeksi.fi/'>teekkarispeksi.fi</a>
-				</footer>
--->
 			</div>
-		</div>
+		</article>
+
+		<div style='clear: both'></div>
 
 	</div>
 

@@ -1,0 +1,9 @@
+#team-wrapper {
+	display: none;
+}
+
+nav ul li.current {
+	background-image: url(../img/diamond_base_ie.png);
+	background-position: 110px 50%;
+}
+
