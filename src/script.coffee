@@ -42,8 +42,8 @@ $ ->
 
 	# $('.debug').html('navi ' + navigator.userAgent);
 	# hackish way to prevent scrolling
-	$(window).scroll (e) ->
-		unless navigator.userAgent.match(/(i(Pad|Phone|Pod))|Safari/)
-			$('body').scrollLeft(0)
-			e.stopPropagation()
+#	$(window).scroll (e) ->
+#		unless navigator.userAgent.match(/(i(Pad|Phone|Pod))|Safari/)
+#			$('body').scrollLeft(0)
+#			e.stopPropagation()
 
