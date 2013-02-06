@@ -121,9 +121,9 @@ $pages = array(
 	<div id="sponsors">
 		<h2>Pääyhteistyökumppanit</h2>
 		<center>
-			<img src='img/small_seepsula.png'>
-			<img src='img/small_yit.png'>
-			<img src='img/small_aw.png'>
+			<a href="http://www.seepsula.fi"><img src='img/small_seepsula.png'></a>
+			<a href="http://www.yit.fi"><img src='img/small_yit.png'></a>
+			<a href="http://www.academicwork.fi"><img src='img/small_aw.png'></a>
 		</center>
 	</div>
 
