@@ -11,27 +11,28 @@ $ ->
 #	$('.debug').html('using javascript')
 
 	# Fake proper navigation
-	primaries = $('nav > ul > li > a')
-	primaries.click (ev) ->
-		ev.preventDefault()
+	if false
+		primaries = $('nav > ul > li > a')
+		primaries.click (ev) ->
+			ev.preventDefault()
 
-		# console.log "primary click"
-		$(primaries).each (idx, it) =>
-			if it == this
-				$(this).parent().addClass 'current'
-			else
-				$(it).parent().removeClass 'current'
+			# console.log "primary click"
+			$(primaries).each (idx, it) =>
+				if it == this
+					$(this).parent().addClass 'current'
+				else
+					$(it).parent().removeClass 'current'
 
-		href = this.href
-		# console.log "href #{href}, window.location #{window.location}"
-		unless href == window.location.toString()
-			article = $('article > div')
-			article.fadeOut(200, ->
-				article.load(href + '/content.html', ->
-					article.fadeIn(200)
+			href = this.href
+			# console.log "href #{href}, window.location #{window.location}"
+			unless href == window.location.toString()
+				article = $('article > div')
+				article.fadeOut(200, ->
+					article.load(href + '/content.html', ->
+						article.fadeIn(200)
+					)
 				)
-			)
-			window.history.pushState(href, "", href)
+				window.history.pushState(href, "", href)
 
 	window.history.pushState window.location.href, "", window.location.href
 	window.onpopstate = (ev) ->
