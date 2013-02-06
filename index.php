@@ -95,6 +95,8 @@ $pages = array(
 				</nav>
 
 				<article>
+<!--					<p class='debug'>hello</p> -->
+
 					<div>
 
 <?php include($current_page . '/content.html'); ?>
