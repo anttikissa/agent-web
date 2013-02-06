@@ -61,7 +61,7 @@ $pages = array(
 
 	<title>Agent - <?= $pages[$current_page] ?></title>
 
-	<meta property="og:image" content="http://teekkarispeksi.fi/2013/img/fb-ikoni.jpg"/>
+	<meta property="og:image" content="http://teekkarispeksi.fi/2013/img/content/carter_katja-thumb.png" />
 	<meta property="og:description"
 		   content="Impovisaatiolla höystetty musikaali moraalin ulkoistamisesta ja kiertoratalaserista." />
 </head>
