@@ -63,7 +63,7 @@ $pages = array(
 
 	<meta property="og:image" content="http://teekkarispeksi.fi/2013/img/content/carter_katja-thumb.png" />
 	<meta property="og:description"
-		   content="Impovisaatiolla höystetty musikaali moraalin ulkoistamisesta ja kiertoratalaserista." />
+		   content="Improvisaatiolla höystetty musikaali moraalin ulkoistamisesta ja kiertoratalaserista." />
 </head>
 
 <body>
