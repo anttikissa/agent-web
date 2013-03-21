@@ -5,6 +5,9 @@ cd $(dirname $0)
 THUMB_MAXSIZE=380x # width x height
 LARGE_MAXSIZE=1000x
 
+rm img/galleria/large/*
+rm img/galleria/thumb/*
+
 for f in content/galleria/*
 do
 	if [ -f $f ]; then
